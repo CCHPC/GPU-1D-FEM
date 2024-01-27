@@ -1,0 +1,1 @@
+python3 simpleXYplot.py -i solution.txt -o plot.pdf
