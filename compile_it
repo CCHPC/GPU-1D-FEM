@@ -1,4 +1,9 @@
 #!/bin/sh
 
 # Cuda
-nvcc femHeat.cu -lcublas -o femHeat 
+
+# STRALLC
+#nvcc -arch=compute_90 femHeat.cu -lcublas -o femHeat
+
+# Windows Quadro P1000 value
+nvcc -arch=sm_61 femHeat.cu -lcublas -o femHeat 
